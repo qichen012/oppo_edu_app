@@ -1,0 +1,22 @@
+# Web 框架和 API
+fastapi==0.115.0
+uvicorn==0.32.0
+pydantic==2.9.2
+python-multipart==0.0.12
+
+# HTTP 请求
+requests==2.32.3
+
+# AI/LLM
+openai==1.51.0
+
+# PDF 处理
+PyMuPDF==1.24.13
+
+# 数据处理
+pandas==2.2.3
+numpy==2.1.2
+
+# RSS 和搜索
+feedparser==6.0.11
+duckduckgo-search==6.3.5

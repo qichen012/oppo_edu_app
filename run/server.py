@@ -13,6 +13,7 @@ from skill.meeting_transcriber import transcribe_audio_file
 from skill.query_rewriter import semantic_rewrite
 from skill.chat_manager import create_chat_session
 from skill.config import UPLOAD_DIR
+from skill.ebbinghaus_recommender import recommend_ebbinghaus_brief
 
 
 # 确保项目根目录在 sys.path 中
@@ -38,9 +39,10 @@ class UserProfileRequest(BaseModel):
 
 
 class RecommendRequest(BaseModel):
-    user_history: List[UserHistory]
+    user_history: List[Dict[str, Any]]  # 兼容 [{"brief_id": 1, "last_view_time": 1670000000}]
+    total_briefs: int = 100  # 简报总数（默认100，可由前端或数据库传入）
+    limit: int = 3  # 推荐返回的数量 (Top-K)
     source: str = 'rss'  # 'rss' or 'ddgs'
-    limit: int = 10
     epsilon: float = 0.1
 
 
@@ -103,16 +105,22 @@ async def analyze_profile(request: UserProfileRequest):
 
 @app.post("/recommend")
 async def recommend_content(request: RecommendRequest):
-    """基于用户历史生成推荐内容"""
+    """基于用户历史生成推荐内容（艾宾浩斯曲线）"""
     try:
-        user_history = [item.dict() for item in request.user_history]
-        result = generate_recommendations(
-            user_history=user_history,
-            source=request.source,
-            limit=request.limit,
-            epsilon=request.epsilon
+        # 提取用户历史
+        user_history = request.user_history
+        
+        # 调用改进版艾宾浩斯推荐算法
+        recommend_ids = recommend_ebbinghaus_brief(
+            user_history=user_history, 
+            total_briefs=request.total_briefs, 
+            top_k=request.limit
         )
-        return result
+        
+        return {
+            "recommend_brief_ids": recommend_ids,
+            "success": True
+        }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

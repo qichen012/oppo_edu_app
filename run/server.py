@@ -7,6 +7,7 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any
 from skill.pdf_processor import process_pdf_file
+from skill.lecture_handout_generator import process_pdf_to_handout
 from skill.screenshot_analyzer import analyze_screenshot_bytes
 from skill.recommendation_engine import analyze_user_profile, generate_recommendations
 from skill.meeting_transcriber import transcribe_audio_file
@@ -76,6 +77,25 @@ async def process_pdf(file: UploadFile = File(...)):
 
     try:
         result = process_pdf_file(file_path, filename=file.filename)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/generate_handout")
+async def generate_handout(file: UploadFile = File(...)):
+    """上传 PDF 文件 -> 返回结构化讲义 JSON + Markdown 文本"""
+    start_time = time.time()
+
+    file_path = os.path.join(UPLOAD_DIR, file.filename)
+    try:
+        with open(file_path, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"文件上传失败: {e}")
+
+    try:
+        result = process_pdf_to_handout(file_path, filename=file.filename)
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

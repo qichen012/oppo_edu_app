@@ -15,6 +15,7 @@ from skill.query_rewriter import semantic_rewrite
 from skill.chat_manager import create_chat_session
 from skill.config import UPLOAD_DIR
 from skill.ebbinghaus_recommender import recommend_ebbinghaus_brief
+from skill.elite_ideas_extractor import process_pdf_to_elite_ideas
 
 
 # 确保项目根目录在 sys.path 中
@@ -96,6 +97,27 @@ async def generate_handout(file: UploadFile = File(...)):
 
     try:
         result = process_pdf_to_handout(file_path, filename=file.filename)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/extract_elite_ideas")
+async def extract_elite_ideas(file: UploadFile = File(...)):
+    """上传 PDF 文件 -> 提取 Elite Ideas（跨领域深层洞见）"""
+    file_path = os.path.join(UPLOAD_DIR, file.filename)
+    try:
+        with open(file_path, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"文件上传失败: {e}")
+
+    try:
+        result = process_pdf_to_elite_ideas(
+            file_path, 
+            filename=file.filename,
+            save_to_file=True  # 默认保存到文件
+        )
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

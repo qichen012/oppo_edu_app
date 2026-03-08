@@ -48,7 +48,7 @@ def extract_pdf_text(pdf_path: str, max_pages: int = None) -> str:
     Args:
         pdf_path: PDF 文件路径
         max_pages: 最大提取页数，None 表示提取所有页
-        
+    
     Returns:
         提取的文本内容
     """

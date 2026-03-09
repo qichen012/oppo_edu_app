@@ -7,7 +7,7 @@ import os
 API_URL = "http://127.0.0.1:8001/analyze_screenshot"
 
 # 测试用截图路径（请修改为本地的测试图片路径）
-SCREENSHOT_PATH = "./data/data_screenshot/test01.jpg"
+SCREENSHOT_PATH = "./data/data_screenshot/images/test01.jpg"
 # =======================================
 
 def run_test():

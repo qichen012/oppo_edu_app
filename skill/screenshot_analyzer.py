@@ -9,7 +9,7 @@ from .config import ZHIZENGZENG_API_KEY, ZHIZENGZENG_BASE_URL, MODEL_NAME, OUTPU
 # 初始化客户端
 client = OpenAI(api_key=ZHIZENGZENG_API_KEY, base_url=ZHIZENGZENG_BASE_URL)
 
-
+    
 def load_all_notes_context(notes_dir):
     """加载所有笔记的上下文信息"""
     context_list = []

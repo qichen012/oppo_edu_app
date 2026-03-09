@@ -3,6 +3,7 @@ import time
 import json
 import fitz
 import threading
+from datetime import datetime, timezone
 from openai import OpenAI
 from .config import ZHIZENGZENG_API_KEY, ZHIZENGZENG_BASE_URL, MODEL_NAME, OUTPUT_DIR
 
@@ -222,14 +223,17 @@ def process_pdf_to_handout(pdf_path, filename=None, max_pages=30):
     if not json_str:
         raise RuntimeError("AI 服务响应失败")
 
-    # 3. 保存到本地
-    archived_path = save_handout_local(fname, json_str)
-
-    # 4. 解析 JSON
+    # 3. 解析 JSON，并注入 created_at
+    created_at = datetime.now(timezone.utc).isoformat()
     try:
         parsed = json.loads(json_str)
+        parsed["created_at"] = created_at          # 写入 JSON 数据
+        json_str = json.dumps(parsed, ensure_ascii=False, indent=2)
     except Exception:
-        parsed = {"raw_output": json_str, "error": "JSON 解析失败"}
+        parsed = {"raw_output": json_str, "error": "JSON 解析失败", "created_at": created_at}
+
+    # 4. 保存到本地（含 created_at）
+    archived_path = save_handout_local(fname, json_str)
 
     # 5. 生成 Markdown 版本
     markdown_content = ""
@@ -249,6 +253,7 @@ def process_pdf_to_handout(pdf_path, filename=None, max_pages=30):
         "process_time": f"{time.time() - start_time:.2f}s",
         "file_name": fname,
         "archived_at": archived_path,
+        "created_at": created_at,
         "data": parsed,
         "markdown": markdown_content,
     }

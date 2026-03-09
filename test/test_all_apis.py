@@ -10,7 +10,7 @@ import os
 BASE_URL = "http://127.0.0.1:8001"
 
 # 测试数据路径
-SCREENSHOT_PATH = "./data/data_screenshot/test01.jpg"
+SCREENSHOT_PATH = "./data/data_screenshot/images/test01.jpg"
 # 如果有音频文件可以用于测试会议转录，在这里指定
 AUDIO_PATH = "./data/meeting_data/mac_recording.wav"  # 如果没有可以设为 None
 

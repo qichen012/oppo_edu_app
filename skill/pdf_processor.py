@@ -3,6 +3,7 @@ import time
 import json
 import fitz
 import threading
+from datetime import datetime, timezone
 from openai import OpenAI
 from .config import ZHIZENGZENG_API_KEY, ZHIZENGZENG_BASE_URL, MODEL_NAME, OUTPUT_DIR
 from .mem0_manager import upload_card_to_mem0
@@ -129,5 +130,6 @@ def process_pdf_file(pdf_path, filename=None, max_pages=15):
         "process_time": f"{time.time() - start_time:.2f}s",
         "file_name": filename or os.path.basename(pdf_path),
         "archived_at": archived_path,
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "data": parsed
     }

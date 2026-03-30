@@ -1,0 +1,20 @@
+{
+  "source_file": "day_a.png",
+  "saved_at": "2026-03-09 10:00:00",
+  "screenshot_timestamp": 1773021600,
+  "screenshot_datetime": "2026-03-09 10:00:00",
+  "image_path": "data/data_screenshot/images/1773021600_day_a.png",
+  "status": "success",
+  "data": {
+    "summary": "线性代数课堂截图，包含特征值与矩阵分解要点",
+    "language": "zh",
+    "ocr_text": "特征值 分解 矩阵 对角化",
+    "structured_content": {
+      "lists": ["特征值定义", "特征向量意义"],
+      "tables": [],
+      "code_blocks": [],
+      "equations": ["Ax=\\lambda x"],
+      "chart_insights": []
+    }
+  }
+}

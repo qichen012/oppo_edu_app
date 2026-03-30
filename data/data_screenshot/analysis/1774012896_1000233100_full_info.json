@@ -1,0 +1,92 @@
+{
+  "source_file": "1000233100.jpg",
+  "saved_at": "2026-03-20 21:22:02",
+  "screenshot_timestamp": 1774012896,
+  "screenshot_datetime": "2026-03-20 21:21:36",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774012896_1000233100.jpg",
+  "status": "success",
+  "process_time": "25.77s",
+  "data": {
+    "summary": "截图主要内容是关于腾讯 AI Lab 在生命科学领域的探索及其研究成果。",
+    "language": "zh",
+    "ocr_text": "实验室还积极探索了 AI 在生命科学领域的应用。例如，其研发的「腾讯觅影」影像云及相关的病理分析技术，利用计算机视觉辅助医生进行癌症早筛。此外，实验室在蛋白质结构预测（如 tFold）和药物研发领域也取得了显著突破，旨在利用 AI 提升医疗资源的分配效率。\n过去十年，腾讯 AI Lab 曾吸引了多位在全球人工智能领域具有深远影响力的顶级科学家，包括 2016 年牵头筹建 AI Lab 的姚星、2017 年被任命为 AI Lab 第一负责人的张潼，负责腾讯西雅图 AI 实验室的俞栋，长期兼任 AI Lab 和 Robotics X 机器人实验室的负责人。",
+    "entities": {
+      "people": [
+        "姚星",
+        "张潼",
+        "俞栋"
+      ],
+      "organizations": [
+        "腾讯 AI Lab",
+        "Robotics X 机器人实验室"
+      ],
+      "products": [
+        "腾讯觅影",
+        "tFold"
+      ],
+      "technologies": [
+        "计算机视觉",
+        "蛋白质结构预测",
+        "病理分析技术"
+      ],
+      "dates": [
+        "2016年",
+        "2017年"
+      ],
+      "numbers": [
+        "339",
+        "5098",
+        "89",
+        "32"
+      ],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "title",
+        "position": "top-center",
+        "text": "实验室还积极探索了 AI 在生命科学领域的应用。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "例如，其研发的「腾讯觅影」影像云及相关的病理分析技术，利用计算机视觉辅助医生进行癌症早筛。此外，实验室在蛋白质结构预测（如 tFold）和药物研发领域也取得了显著突破，旨在利用 AI 提升医疗资源的分配效率。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "过去十年，腾讯 AI Lab 曾吸引了多位在全球人工智能领域具有深远影响力的顶级科学家，包括 2016 年牵头筹建 AI Lab 的姚星、2017 年被任命为 AI Lab 第一负责人的张潼，负责腾讯西雅图 AI 实验室的俞栋，长期兼任 AI Lab 和 Robotics X 机器人实验室的负责人。",
+        "confidence": "high"
+      },
+      {
+        "type": "icon",
+        "position": "bottom-left",
+        "text": "机器之心",
+        "confidence": "high"
+      },
+      {
+        "type": "button",
+        "position": "bottom-center",
+        "text": "点赞 339 评论 5098 转发 89 收藏 32",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

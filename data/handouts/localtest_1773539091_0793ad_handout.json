@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "本地冒烟测试讲义",
+    "subject": "信息论",
+    "source_file": "local_smoke_test.pdf"
+  },
+  "overview": "用于验证 /extract_elite_ideas 是否会落盘到 data/elite_ideas。",
+  "sections": [
+    {
+      "title": "基础概念",
+      "content": "本段只用于本地测试。",
+      "key_concepts": [
+        {
+          "term": "自信息",
+          "definition": "单个事件发生带来的信息量。",
+          "formula": "I(x)=-log p(x)",
+          "example": "掷硬币正面：p=0.5"
+        },
+        {
+          "term": "联合自信息",
+          "definition": "多个事件同时发生的信息量。",
+          "formula": "I(x,y)=-log p(x,y)",
+          "example": "两次掷硬币同时为正面"
+        }
+      ]
+    }
+  ],
+  "summary": "测试结束后可删除产物。"
+}

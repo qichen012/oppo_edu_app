@@ -1,0 +1,15 @@
+{
+  "user_id": 0,
+  "target_date": "2026-03-12",
+  "posterior_insight": "Mock: 已完成 2026-03-09（课外截图）与 2026-03-12（课内简报）的知识关联融合。",
+  "key_concepts": "Mock: 这是用于联调的融合简报正文。\n- 课外信息要点：已从 date_a 扫描到截图提取结果。\n- 课内简报要点：已从 date_b 扫描到当日全部简报文件。\n- 关联点列表：\n  1) 课外概念A -> 课内知识点X -> 理由（Mock）。\n  2) 课外概念B -> 课内知识点Y -> 理由（Mock）。\n  3) 课外题型C -> 课内方法Z -> 理由（Mock）。\n  4) 课外线索D -> 课内复习建议W -> 理由（Mock）。\n  5) 课外疑点E -> 课内易错点V -> 理由（Mock）。\n- 后续：关闭 mock 将调用真实模型生成。",
+  "created_at": "2026-03-18T09:38:00.562878+00:00",
+  "next_review_date": "2026-03-13",
+  "review_stage": 0,
+  "user_reflect": "",
+  "source_handouts": [
+    "离散信息度量体系与信息熵"
+  ],
+  "handout_count": 1,
+  "process_time": "0.01s"
+}

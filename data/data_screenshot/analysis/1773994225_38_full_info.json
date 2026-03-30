@@ -1,0 +1,93 @@
+{
+  "source_file": "38.jpg",
+  "saved_at": "2026-03-20 16:10:43",
+  "screenshot_timestamp": 1773994225,
+  "screenshot_datetime": "2026-03-20 16:10:25",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1773994225_38.jpg",
+  "status": "success",
+  "process_time": "17.89s",
+  "data": {
+    "summary": "截图主要内容是关于TBD Lab开发两类模型及相关产品的进展。",
+    "language": "zh",
+    "ocr_text": "TBD Lab 正在同时开发两类模型：基础大模型 Avocado；图像/视频生成模型 Mango。\n据《纽约时报》报道，TBD Lab 于去年年底完成了 Avocado 开发的第一阶段，即预训练。今年 1 月，他们开始了后训练，团队也正在这个阶段将目标发布日期定在了 3 月中旬(结果跑票)。\n目前已经推出过一个产品 Vibes，一个类似 OpenAI Sora 的视频生成应用。\n不过，内部团队也并非完全顺利。报道称，有研究员在 Avocado 发布前离职，Alexandr Wang 与 Meta 产品负责人之间存在分歧，名誉维权占用 AI 机构资源。\n机器之心\n41 190 8 写留言",
+    "entities": {
+      "people": [
+        "Alexandr Wang"
+      ],
+      "organizations": [
+        "TBD Lab",
+        "Meta",
+        "OpenAI",
+        "纽约时报"
+      ],
+      "products": [
+        "Avocado",
+        "Mango",
+        "Vibes",
+        "Sora"
+      ],
+      "technologies": [
+        "基础大模型",
+        "图像/视频生成模型"
+      ],
+      "dates": [
+        "去年年底",
+        "今年 1 月",
+        "3 月中旬"
+      ],
+      "numbers": [
+        "41",
+        "190",
+        "8"
+      ],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "title",
+        "position": "top-center",
+        "text": "TBD Lab 正在同时开发两类模型：基础大模型 Avocado；图像/视频生成模型 Mango。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "据《纽约时报》报道，TBD Lab 于去年年底完成了 Avocado 开发的第一阶段，即预训练。今年 1 月，他们开始了后训练，团队也正在这个阶段将目标发布日期定在了 3 月中旬(结果跑票)。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "目前已经推出过一个产品 Vibes，一个类似 OpenAI Sora 的视频生成应用。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "不过，内部团队也并非完全顺利。报道称，有研究员在 Avocado 发布前离职，Alexandr Wang 与 Meta 产品负责人之间存在分歧，名誉维权占用 AI 机构资源。",
+        "confidence": "high"
+      },
+      {
+        "type": "footer",
+        "position": "bottom-center",
+        "text": "机器之心\n41 190 8 写留言",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

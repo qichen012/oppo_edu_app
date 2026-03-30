@@ -1,0 +1,112 @@
+{
+  "source_file": "38.jpg",
+  "saved_at": "2026-03-21 14:18:29",
+  "screenshot_timestamp": 1774073893,
+  "screenshot_datetime": "2026-03-21 14:18:13",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774073893_38.jpg",
+  "status": "success",
+  "process_time": "15.55s",
+  "data": {
+    "summary": "TBD Lab 正在开发两类模型，并计划在 3 月中旬发布 Avocado 模型，同时已推出类似 OpenAI Sora 的视频生成应用 Vibes。",
+    "language": "zh",
+    "ocr_text": "TBD Lab 正在同时开发两类模型：基础大模型 Avocado；图像/视频生成模型 Mango。\n\n据《纽约时报》报道，TBD Lab 于去年年底完成了 Avocado 开发的第一阶段，即预训练。今年 1 月，他们开始了后训练，团队也正在这个阶段将目标发布日期定在了 3 月中旬（结果跑票）。\n\n目前已经推出过一个产品 Vibes，一个类似 OpenAI Sora 的视频生成应用。\n\n不过，内部团队也并非完全顺利。报道称，有研究员在 Avocado 发布前离职，Alexandr Wang 与 Meta 产品多人之间存在争议，名誉维权官司 AI 加速。\n\n机器之心\n41 190 8 写留言",
+    "entities": {
+      "people": [
+        "Alexandr Wang"
+      ],
+      "organizations": [
+        "TBD Lab",
+        "纽约时报",
+        "Meta",
+        "OpenAI",
+        "机器之心"
+      ],
+      "products": [
+        "Avocado",
+        "Mango",
+        "Vibes",
+        "Sora"
+      ],
+      "technologies": [
+        "视频生成",
+        "AI"
+      ],
+      "dates": [
+        "去年年底",
+        "今年 1 月",
+        "3 月中旬"
+      ],
+      "numbers": [
+        "41",
+        "190",
+        "8"
+      ],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "title",
+        "position": "top-center",
+        "text": "TBD Lab 正在同时开发两类模型：基础大模型 Avocado；图像/视频生成模型 Mango。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "据《纽约时报》报道，TBD Lab 于去年年底完成了 Avocado 开发的第一阶段，即预训练。今年 1 月，他们开始了后训练，团队也正在这个阶段将目标发布日期定在了 3 月中旬（结果跑票）。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "目前已经推出过一个产品 Vibes，一个类似 OpenAI Sora 的视频生成应用。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "不过，内部团队也并非完全顺利。报道称，有研究员在 Avocado 发布前离职，Alexandr Wang 与 Meta 产品多人之间存在争议，名誉维权官司 AI 加速。",
+        "confidence": "high"
+      },
+      {
+        "type": "image",
+        "position": "center",
+        "text": "一只穿着鳄梨服装的猫的图片",
+        "confidence": "high"
+      },
+      {
+        "type": "icon",
+        "position": "bottom-left",
+        "text": "机器之心",
+        "confidence": "high"
+      },
+      {
+        "type": "icon",
+        "position": "bottom-center",
+        "text": "点赞 41，评论 190，分享 8",
+        "confidence": "high"
+      },
+      {
+        "type": "button",
+        "position": "bottom-right",
+        "text": "写留言",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "elite_idea_cards": [
+    {
+      "daily_brief_id": null,
+      "origin_concept": "基础概念",
+      "meta_idea_name": "自信息",
+      "meta_explanation": "单个事件发生带来的信息量。",
+      "create_at": "2026-03-15 11:08:36",
+      "card_index": 0
+    },
+    {
+      "daily_brief_id": null,
+      "origin_concept": "基础概念",
+      "meta_idea_name": "联合自信息",
+      "meta_explanation": "多个事件同时发生的信息量。",
+      "create_at": "2026-03-15 11:08:36",
+      "card_index": 1
+    }
+  ],
+  "elite_idea_cases": [],
+  "external_resources": []
+}

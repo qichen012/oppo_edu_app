@@ -1,0 +1,84 @@
+{
+  "source_file": "1000233104.jpg",
+  "saved_at": "2026-03-20 21:49:56",
+  "screenshot_timestamp": 1774014571,
+  "screenshot_datetime": "2026-03-20 21:49:31",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774014571_1000233104.jpg",
+  "status": "success",
+  "process_time": "25.36s",
+  "data": {
+    "summary": "截图主要内容是关于腾讯 AI Lab 被撤销及人员调整的新闻。",
+    "language": "zh",
+    "ocr_text": "突发！腾讯AI Lab撤销，部分人员并入混元\n原创 机器之心 机器之心\n2026年3月20日 19:00 四川 122人\nMinds in AI.\n机器之心编辑部\n今天，机器之心获悉，腾讯 TEG 技术工程事业群组织架构发生了部分调整，AI Lab 被撤销，蒋杰不再担任 AI Lab 主任，但其他管理职责不变。\n此次调整过后，原 AI Lab 部分人员调整至混元团队向姚顺雨汇报。产学研合作中心保留。多模态部负责人向 TEG 总裁卢山汇报。\n机器之心\n353 5420 93 30",
+    "entities": {
+      "people": [
+        "蒋杰",
+        "姚顺雨",
+        "卢山"
+      ],
+      "organizations": [
+        "腾讯",
+        "AI Lab",
+        "TEG",
+        "机器之心",
+        "混元团队",
+        "产学研合作中心"
+      ],
+      "products": [],
+      "technologies": [],
+      "dates": [
+        "2026年3月20日"
+      ],
+      "numbers": [
+        "19:00",
+        "122",
+        "353",
+        "5420",
+        "93",
+        "30"
+      ],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "title",
+        "position": "top-center",
+        "text": "突发！腾讯AI Lab撤销，部分人员并入混元",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "今天，机器之心获悉，腾讯 TEG 技术工程事业群组织架构发生了部分调整，AI Lab 被撤销，蒋杰不再担任 AI Lab 主任，但其他管理职责不变。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "此次调整过后，原 AI Lab 部分人员调整至混元团队向姚顺雨汇报。产学研合作中心保留。多模态部负责人向 TEG 总裁卢山汇报。",
+        "confidence": "high"
+      },
+      {
+        "type": "footer",
+        "position": "bottom-center",
+        "text": "机器之心 353 5420 93 30",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

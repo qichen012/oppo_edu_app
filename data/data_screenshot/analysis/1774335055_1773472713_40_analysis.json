@@ -1,0 +1,18 @@
+{
+  "source_file": "1773472713_40.png",
+  "user_id": 2,
+  "saved_at": "2026-03-24 14:51:08",
+  "screenshot_timestamp": 1774335055,
+  "screenshot_datetime": "2026-03-24 14:50:55",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774335055_1773472713_40.png",
+  "status": "success",
+  "process_time": "12.23s",
+  "data": {
+    "screenshot_analysis": "截图内容主要涉及信息论的基本概念，包括自信息、互信息、熵及其条件形式的定义和性质。这些内容以概率论为基础，探讨了信息量的度量方法，重点在于事件发生的不确定性和信息量的关系。",
+    "best_match": {
+      "related_note_filename": "test01_card.json",
+      "note_title": "离散信息的度量",
+      "reason": "截图内容与笔记 '离散信息的度量' 高度相关。两者都讨论了信息论的核心概念，如自信息、互信息、熵及其条件形式，且都基于概率论的视角分析信息量的度量。这种原理性的一致性使得该笔记成为最佳匹配。"
+    }
+  }
+}

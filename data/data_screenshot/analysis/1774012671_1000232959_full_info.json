@@ -1,0 +1,84 @@
+{
+  "source_file": "1000232959.jpg",
+  "saved_at": "2026-03-20 21:18:21",
+  "screenshot_timestamp": 1774012671,
+  "screenshot_datetime": "2026-03-20 21:17:51",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774012671_1000232959.jpg",
+  "status": "success",
+  "process_time": "30.13s",
+  "data": {
+    "summary": "截图主要内容是关于基于互信息的神经估计器（MINE、DINE、TREET）及其相关研究进展。",
+    "language": "zh",
+    "ocr_text": "基于互信息的 Donsker-Varadhan 表示²⁴，Belghazi 等人在互信息神经估计器（Mutual Information Neural Estimator, MINE）取得重要进展²⁵。受此启发，Permuter 及其合作者进一步提出了基于 RNN 的定向信息神经估计器（Directed Information Neural Estimator, DINE）²⁶。更进一步地，他们最近的工作则提出 Transformer 本身就可以用来估计传递熵（TRansfer Entropy Estimation via Transformers, TREET），即有限长度版本的定向信息²⁷。TREET 将传递熵的估计问题转化为一个离散序列的自回归预测问题，利用 Transformer。",
+    "entities": {
+      "people": [
+        "Belghazi",
+        "Permuter"
+      ],
+      "organizations": [],
+      "products": [
+        "Mutual Information Neural Estimator",
+        "MINE",
+        "Directed Information Neural Estimator",
+        "DINE",
+        "TRansfer Entropy Estimation via Transformers",
+        "TREET",
+        "Transformer"
+      ],
+      "technologies": [
+        "Donsker-Varadhan 表示",
+        "RNN",
+        "Transformer"
+      ],
+      "dates": [],
+      "numbers": [
+        "²⁴",
+        "²⁵",
+        "²⁶",
+        "²⁷"
+      ],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "基于互信息的 Donsker-Varadhan 表示²⁴，Belghazi 等人在互信息神经估计器（Mutual Information Neural Estimator, MINE）取得重要进展²⁵。受此启发，Permuter 及其合作者进一步提出了基于 RNN 的定向信息神经估计器（Directed Information Neural Estimator, DINE）²⁶。更进一步地，他们最近的工作则提出 Transformer 本身就可以用来估计传递熵（TRansfer Entropy Estimation via Transformers, TREET），即有限长度版本的定向信息²⁷。TREET 将传递熵的估计问题转化为一个离散序列的自回归预测问题，利用 Transformer。",
+        "confidence": "high"
+      },
+      {
+        "type": "icon",
+        "position": "top-left",
+        "text": "晚上9:13",
+        "confidence": "high"
+      },
+      {
+        "type": "icon",
+        "position": "bottom-left",
+        "text": "机器之心",
+        "confidence": "high"
+      },
+      {
+        "type": "icon",
+        "position": "bottom-center",
+        "text": "438 2495 14",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

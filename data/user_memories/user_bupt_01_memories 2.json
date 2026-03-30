@@ -1,0 +1,541 @@
+{
+  "results": [
+    {
+      "id": "19238fae-a48c-459d-9914-ef781efc1fe6",
+      "memory": "今天学习了关于'离散信息的度量'的知识",
+      "hash": "cfa5b2ec0722bcf862a5745e46a351bd",
+      "metadata": {
+        "title": "离散信息的度量",
+        "category": "信息论",
+        "card_data": "{\"meta\": {\"color\": \"#FF5733\", \"category\": \"信息论\"}, \"header\": {\"title\": \"离散信息的度量\", \"subtitle\": \"信息论课程\"}, \"body\": {\"summary\": \"本章讨论了离散信息的度量，包括自信息、互信息、熵及其条件形式。通过概率的视角分析信息量的度量，探讨事件发生前后的不确定性和信息量。\", \"key_points\": [{\"icon\": \"📊\", \"text\": \"自信息是事件发生前后的不确定性度量。\"}, {\"icon\": \"🔗\", \"text\": \"互信息衡量两个事件间的相互依赖性。\"}, {\"icon\": \"🔍\", \"text\": \"熵是信息量的平均度量，反映系统的无序程度。\"}, {\"icon\": \"📈\", \"text\": \"条件熵和条件互信息用于分析给定条件下的信息量变化。\"}, {\"icon\": \"🧮\", \"text\": \"信息量的计算依赖于概率分布和对数底的选择。\"}]}, \"footer\": {\"quote\": \"信息量的度量是理解信息传递和处理的基础。\"}}",
+        "timestamp": "2026-01-25 18:17:04"
+      },
+      "created_at": "2026-01-25T02:17:18.227365-08:00",
+      "updated_at": null,
+      "user_id": "user_bupt_01",
+      "agent_id": "pdf_processor",
+      "run_id": "20260125"
+    },
+    {
+      "id": "1ac84214-f24d-478b-a604-98864d4f2019",
+      "memory": "分类：信息论",
+      "hash": "19e71c3b3395edc83a4193b962e0a1af",
+      "metadata": {
+        "title": "离散信息的度量",
+        "category": "信息论",
+        "card_data": "{\"meta\": {\"color\": \"#FF5733\", \"category\": \"信息论\"}, \"header\": {\"title\": \"离散信息的度量\", \"subtitle\": \"信息论课程\"}, \"body\": {\"summary\": \"本章讨论了离散信息的度量，包括自信息、互信息、熵及其条件形式。通过概率的视角分析信息量的度量，探讨事件发生前后的不确定性和信息量。\", \"key_points\": [{\"icon\": \"📊\", \"text\": \"自信息是事件发生前后的不确定性度量。\"}, {\"icon\": \"🔗\", \"text\": \"互信息衡量两个事件间的相互依赖性。\"}, {\"icon\": \"🔍\", \"text\": \"熵是信息量的平均度量，反映系统的无序程度。\"}, {\"icon\": \"📈\", \"text\": \"条件熵和条件互信息用于分析给定条件下的信息量变化。\"}, {\"icon\": \"🧮\", \"text\": \"信息量的计算依赖于概率分布和对数底的选择。\"}]}, \"footer\": {\"quote\": \"信息量的度量是理解信息传递和处理的基础。\"}}",
+        "timestamp": "2026-01-25 18:17:04"
+      },
+      "created_at": "2026-01-25T02:17:18.280539-08:00",
+      "updated_at": null,
+      "user_id": "user_bupt_01",
+      "agent_id": "pdf_processor",
+      "run_id": "20260125"
+    },
+    {
+      "id": "e5f32bb1-aa16-407e-8d73-2403031f3a59",
+      "memory": "主要内容：本章讨论了离散信息的度量，包括自信息、互信息、熵及其条件形式",
+      "hash": "bcc4ab2461338f292c2d983084839077",
+      "metadata": {
+        "title": "离散信息的度量",
+        "category": "信息论",
+        "card_data": "{\"meta\": {\"color\": \"#FF5733\", \"category\": \"信息论\"}, \"header\": {\"title\": \"离散信息的度量\", \"subtitle\": \"信息论课程\"}, \"body\": {\"summary\": \"本章讨论了离散信息的度量，包括自信息、互信息、熵及其条件形式。通过概率的视角分析信息量的度量，探讨事件发生前后的不确定性和信息量。\", \"key_points\": [{\"icon\": \"📊\", \"text\": \"自信息是事件发生前后的不确定性度量。\"}, {\"icon\": \"🔗\", \"text\": \"互信息衡量两个事件间的相互依赖性。\"}, {\"icon\": \"🔍\", \"text\": \"熵是信息量的平均度量，反映系统的无序程度。\"}, {\"icon\": \"📈\", \"text\": \"条件熵和条件互信息用于分析给定条件下的信息量变化。\"}, {\"icon\": \"🧮\", \"text\": \"信息量的计算依赖于概率分布和对数底的选择。\"}]}, \"footer\": {\"quote\": \"信息量的度量是理解信息传递和处理的基础。\"}}",
+        "timestamp": "2026-01-25 18:17:04"
+      },
+      "created_at": "2026-01-25T02:17:18.287199-08:00",
+      "updated_at": null,
+      "user_id": "user_bupt_01",
+      "agent_id": "pdf_processor",
+      "run_id": "20260125"
+    },
+    {
+      "id": "925216a6-d941-4b86-bd89-75fd1c92d34c",
+      "memory": "通过概率的视角分析信息量的度量",
+      "hash": "89e66ef9867909579f835d29012e39f5",
+      "metadata": {
+        "title": "离散信息的度量",
+        "category": "信息论",
+        "card_data": "{\"meta\": {\"color\": \"#FF5733\", \"category\": \"信息论\"}, \"header\": {\"title\": \"离散信息的度量\", \"subtitle\": \"信息论课程\"}, \"body\": {\"summary\": \"本章讨论了离散信息的度量，包括自信息、互信息、熵及其条件形式。通过概率的视角分析信息量的度量，探讨事件发生前后的不确定性和信息量。\", \"key_points\": [{\"icon\": \"📊\", \"text\": \"自信息是事件发生前后的不确定性度量。\"}, {\"icon\": \"🔗\", \"text\": \"互信息衡量两个事件间的相互依赖性。\"}, {\"icon\": \"🔍\", \"text\": \"熵是信息量的平均度量，反映系统的无序程度。\"}, {\"icon\": \"📈\", \"text\": \"条件熵和条件互信息用于分析给定条件下的信息量变化。\"}, {\"icon\": \"🧮\", \"text\": \"信息量的计算依赖于概率分布和对数底的选择。\"}]}, \"footer\": {\"quote\": \"信息量的度量是理解信息传递和处理的基础。\"}}",
+        "timestamp": "2026-01-25 18:17:04"
+      },
+      "created_at": "2026-01-25T02:17:18.292837-08:00",
+      "updated_at": null,
+      "user_id": "user_bupt_01",
+      "agent_id": "pdf_processor",
+      "run_id": "20260125"
+    },
+    {
+      "id": "d47af26c-5de1-488f-93a9-2359cfb2ad0e",
+      "memory": "探讨事件发生前后的不确定性和信息量",
+      "hash": "88a33d1f879525fcbc609bc551c5fd2a",
+      "metadata": {
+        "title": "离散信息的度量",
+        "category": "信息论",
+        "card_data": "{\"meta\": {\"color\": \"#FF5733\", \"category\": \"信息论\"}, \"header\": {\"title\": \"离散信息的度量\", \"subtitle\": \"信息论课程\"}, \"body\": {\"summary\": \"本章讨论了离散信息的度量，包括自信息、互信息、熵及其条件形式。通过概率的视角分析信息量的度量，探讨事件发生前后的不确定性和信息量。\", \"key_points\": [{\"icon\": \"📊\", \"text\": \"自信息是事件发生前后的不确定性度量。\"}, {\"icon\": \"🔗\", \"text\": \"互信息衡量两个事件间的相互依赖性。\"}, {\"icon\": \"🔍\", \"text\": \"熵是信息量的平均度量，反映系统的无序程度。\"}, {\"icon\": \"📈\", \"text\": \"条件熵和条件互信息用于分析给定条件下的信息量变化。\"}, {\"icon\": \"🧮\", \"text\": \"信息量的计算依赖于概率分布和对数底的选择。\"}]}, \"footer\": {\"quote\": \"信息量的度量是理解信息传递和处理的基础。\"}}",
+        "timestamp": "2026-01-25 18:17:04"
+      },
+      "created_at": "2026-01-25T02:17:18.297805-08:00",
+      "updated_at": null,
+      "user_id": "user_bupt_01",
+      "agent_id": "pdf_processor",
+      "run_id": "20260125"
+    }
+  ],
+  "relations": [
+    {
+      "source": "2026-01-25_17:35:17",
+      "relationship": "timestamp",
+      "target": "离散信息的度量"
+    },
+    {
+      "source": "2026-01-25_17:35:17",
+      "relationship": "category",
+      "target": "信息论"
+    },
+    {
+      "source": "2026-01-25_17:35:17",
+      "relationship": "title",
+      "target": "离散信息的度量"
+    },
+    {
+      "source": "2026-01-25_17:35:17",
+      "relationship": "date_of",
+      "target": "离散信息的度量"
+    },
+    {
+      "source": "数据科学理论基础：机器学习",
+      "relationship": "category",
+      "target": "机器学习"
+    },
+    {
+      "source": "数据科学理论基础：机器学习",
+      "relationship": "subtitle",
+      "target": "北京邮电大学智能感知与计算教研中心"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "类型",
+      "target": "无监督学习"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "类型",
+      "target": "监督学习"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "涉及",
+      "target": "统计学"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "涉及",
+      "target": "概率论"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "核心",
+      "target": "人工智能"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "task",
+      "target": "降维"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "task",
+      "target": "协同过滤"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "task",
+      "target": "聚类"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "task",
+      "target": "回归"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "task",
+      "target": "分类"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "type",
+      "target": "无监督学习"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "type",
+      "target": "监督学习"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "includes",
+      "target": "无监督学习"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "includes",
+      "target": "监督学习"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "involves",
+      "target": "统计学"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "involves",
+      "target": "概率论"
+    },
+    {
+      "source": "机器学习",
+      "relationship": "core_of",
+      "target": "人工智能"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "算法",
+      "target": "决策树"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "算法",
+      "target": "knn"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "applied_to",
+      "target": "回归"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "applied_to",
+      "target": "分类"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "applies_to",
+      "target": "回归"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "applies_to",
+      "target": "分类"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "task",
+      "target": "回归"
+    },
+    {
+      "source": "监督学习",
+      "relationship": "task",
+      "target": "分类"
+    },
+    {
+      "source": "无监督学习",
+      "relationship": "应用",
+      "target": "降维"
+    },
+    {
+      "source": "无监督学习",
+      "relationship": "应用",
+      "target": "协同过滤"
+    },
+    {
+      "source": "无监督学习",
+      "relationship": "applied_to",
+      "target": "聚类"
+    },
+    {
+      "source": "无监督学习",
+      "relationship": "applies_to",
+      "target": "聚类"
+    },
+    {
+      "source": "无监督学习",
+      "relationship": "task",
+      "target": "聚类"
+    },
+    {
+      "source": "分类",
+      "relationship": "includes",
+      "target": "多元分类"
+    },
+    {
+      "source": "分类",
+      "relationship": "includes",
+      "target": "二元分类"
+    },
+    {
+      "source": "分类",
+      "relationship": "method",
+      "target": "决策树"
+    },
+    {
+      "source": "分类",
+      "relationship": "method",
+      "target": "knn算法"
+    },
+    {
+      "source": "回归",
+      "relationship": "maps_data_to",
+      "target": "实值"
+    },
+    {
+      "source": "回归",
+      "relationship": "method",
+      "target": "决策树"
+    },
+    {
+      "source": "聚类",
+      "relationship": "divides_data_into",
+      "target": "不同簇"
+    },
+    {
+      "source": "knn算法",
+      "relationship": "characteristic",
+      "target": "计算量大"
+    },
+    {
+      "source": "knn算法",
+      "relationship": "suitable_for",
+      "target": "多分类问题"
+    },
+    {
+      "source": "knn算法",
+      "relationship": "type_of",
+      "target": "分类"
+    },
+    {
+      "source": "决策树",
+      "relationship": "适用",
+      "target": "回归"
+    },
+    {
+      "source": "决策树",
+      "relationship": "适用",
+      "target": "分类"
+    },
+    {
+      "source": "决策树",
+      "relationship": "builds_model_based_on",
+      "target": "数据属性"
+    },
+    {
+      "source": "决策树",
+      "relationship": "solves",
+      "target": "回归问题"
+    },
+    {
+      "source": "决策树",
+      "relationship": "solves",
+      "target": "分类问题"
+    },
+    {
+      "source": "决策树",
+      "relationship": "used_for",
+      "target": "回归"
+    },
+    {
+      "source": "决策树",
+      "relationship": "used_for",
+      "target": "分类"
+    },
+    {
+      "source": "knn",
+      "relationship": "适合",
+      "target": "多分类问题"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "learned",
+      "target": "user_id:_user_bupt_01,_agent_id:_pdf_processor,_run_id:_20260125"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "条件形式"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "example_in",
+      "target": "棋盘例子"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "concept_in",
+      "target": "联合自信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "concept_in",
+      "target": "信息熵"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "subtitle_of",
+      "target": "北邮信息论课程"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "category",
+      "target": "信息论"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "measure_of",
+      "target": "不确定性"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "measure_of",
+      "target": "信息量"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "perspective_of",
+      "target": "概率论"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "concept_in",
+      "target": "熵"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "concept_in",
+      "target": "条件自信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "concept_in",
+      "target": "互信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "concept_in",
+      "target": "自信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "category_of",
+      "target": "信息论"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "date_of",
+      "target": "2026-01-25_17:35:17"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "applied_in",
+      "target": "消息传递"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "analyzed_through",
+      "target": "概率论"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "联合熵"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "条件熵"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "信息熵"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "联合自信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "熵"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "条件自信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "互信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "includes",
+      "target": "自信息"
+    },
+    {
+      "source": "离散信息的度量",
+      "relationship": "part_of",
+      "target": "北邮信息论课程"
+    },
+    {
+      "source": "自信息",
+      "relationship": "measures",
+      "target": "事件发生前后的不确定性"
+    },
+    {
+      "source": "互信息",
+      "relationship": "measures",
+      "target": "两个事件之间的相互依赖性"
+    },
+    {
+      "source": "条件自信息",
+      "relationship": "measures",
+      "target": "给定条件下的事件信息量"
+    },
+    {
+      "source": "熵",
+      "relationship": "reflects",
+      "target": "系统的混乱程度"
+    },
+    {
+      "source": "熵",
+      "relationship": "measures",
+      "target": "信息量的平均度量"
+    },
+    {
+      "source": "联合自信息",
+      "relationship": "related_to",
+      "target": "条件自信息"
+    },
+    {
+      "source": "信息论课程",
+      "relationship": "introduces",
+      "target": "离散信息的度量"
+    },
+    {
+      "source": "信息量的度量",
+      "relationship": "key_to_understanding",
+      "target": "通信系统"
+    },
+    {
+      "source": "条件自信息的关系公式",
+      "relationship": "related_to",
+      "target": "条件自信息"
+    },
+    {
+      "source": "条件自信息的关系公式",
+      "relationship": "related_to",
+      "target": "联合自信息"
+    }
+  ]
+}

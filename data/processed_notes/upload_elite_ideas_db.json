@@ -1,0 +1,22 @@
+{
+  "elite_idea_cards": [
+    {
+      "daily_brief_id": null,
+      "origin_concept": "离散信息度量的基础概念",
+      "meta_idea_name": "自信息",
+      "meta_explanation": "衡量单个事件发生时带来的信息量，定义为 I(x) = -log p(x)。",
+      "create_at": "2026-03-14 21:09:45",
+      "card_index": 0
+    },
+    {
+      "daily_brief_id": null,
+      "origin_concept": "离散信息度量的基础概念",
+      "meta_idea_name": "联合自信息",
+      "meta_explanation": "衡量多个事件同时发生时带来的信息量，定义为 I(xy) = -log p(xy)。",
+      "create_at": "2026-03-14 21:09:45",
+      "card_index": 1
+    }
+  ],
+  "elite_idea_cases": [],
+  "external_resources": []
+}

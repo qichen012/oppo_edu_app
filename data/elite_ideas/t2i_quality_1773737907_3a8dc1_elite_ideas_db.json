@@ -1,0 +1,24 @@
+{
+  "elite_idea_cards": [
+    {
+      "daily_brief_id": null,
+      "origin_concept": "学习策略",
+      "meta_idea_name": "费曼学习法",
+      "meta_explanation": "用通俗语言讲清楚，发现并填补理解漏洞。",
+      "create_at": "2026-03-17 16:58:27",
+      "card_index": 0,
+      "image_path": "data/elite_ideas/images/t2i_quality_1773737907_3a8dc1_card1_723cfb5ccd.png"
+    },
+    {
+      "daily_brief_id": null,
+      "origin_concept": "学习策略",
+      "meta_idea_name": "刻意练习",
+      "meta_explanation": "在反馈闭环里做高强度、目标明确的练习。",
+      "create_at": "2026-03-17 16:58:27",
+      "card_index": 1,
+      "image_path": "data/elite_ideas/images/t2i_quality_1773737907_3a8dc1_card2_dabfaebc32.png"
+    }
+  ],
+  "elite_idea_cases": [],
+  "external_resources": []
+}

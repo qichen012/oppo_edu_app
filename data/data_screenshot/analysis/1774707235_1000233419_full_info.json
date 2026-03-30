@@ -1,0 +1,69 @@
+{
+  "source_file": "1000233419.jpg",
+  "user_id": null,
+  "saved_at": "2026-03-28 22:14:10",
+  "screenshot_timestamp": 1774707235,
+  "screenshot_datetime": "2026-03-28 22:13:55",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774707235_1000233419.jpg",
+  "status": "success",
+  "process_time": "15.37s",
+  "data": {
+    "summary": "Qwen团队在NeurIPS 2025上获得最佳论文奖，论文提出了门控注意力机制以改进Transformer模型。",
+    "language": "mixed",
+    "ocr_text": "根据公开信息，Qwen团队在NeurIPS 2025上斩获最佳论文奖的论文是：\n《Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free》\n该论文的核心贡献是提出了一种名为“门控注意力（Gated Attention）”的改进机制，通过在Transformer模型的注意力层中引入简单的门控结构，解决了大语言模型中长期存在的“注意力池（Attention Sink）”和“巨量激活（Massive Activation）”问题，同时提升了模型的训练稳定性、长上下文泛化能力和整体性能。",
+    "entities": {
+      "people": [],
+      "organizations": [
+        "Qwen团队",
+        "NeurIPS"
+      ],
+      "products": [],
+      "technologies": [
+        "Gated Attention",
+        "Transformer模型",
+        "Attention Sink",
+        "Massive Activation"
+      ],
+      "dates": [
+        "2025"
+      ],
+      "numbers": [],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "title",
+        "position": "top-center",
+        "text": "根据公开信息，Qwen团队在NeurIPS 2025上斩获最佳论文奖的论文是：",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "《Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free》",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "bottom-center",
+        "text": "该论文的核心贡献是提出了一种名为“门控注意力（Gated Attention）”的改进机制，通过在Transformer模型的注意力层中引入简单的门控结构，解决了大语言模型中长期存在的“注意力池（Attention Sink）”和“巨量激活（Massive Activation）”问题，同时提升了模型的训练稳定性、长上下文泛化能力和整体性能。",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

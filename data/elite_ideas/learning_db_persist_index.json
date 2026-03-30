@@ -1,0 +1,172 @@
+{
+  "a496f99dac1e4f3761a42d50fe5a3b71b4a75dd7b88127ab24ea6b668596e22b": {
+    "status": "done",
+    "created_at": "2026-03-26T01:05:51.955234Z",
+    "source": "data/elite_ideas/test02_elite_ideas_db.json",
+    "cards": {
+      "0": 9,
+      "1": 10
+    },
+    "cases_done": [
+      "3dbc77a3056755c64611f5734ab25799da49c9fd372049e5d35d3a4d4039a5ab",
+      "640833af0105a92a69071ff23008f597d1f24a8ebaf2a6517b683145a10a5538",
+      "6adad9b453061f6185c17a2103eef0a65919642e17616f8ed70cd74e5e33f605",
+      "8b8179aebce7c13c2758712aacd54e3ad68a131ee2375d0f45ea6fae10150d2a",
+      "c3de0049cb6bc8fc8367e8296a664f4a69028668a296454fe363f1f873f2bf8b",
+      "e869ef50112810afb29e9381350a3894e08a98a1051088540b7291b2e401071d"
+    ],
+    "resources_done": [],
+    "done_at": "2026-03-26T01:05:52.083128Z"
+  },
+  "4916048346a51cae1960dedc758eb910be30c4a04000b9c626eea221959c63e1": {
+    "status": "done",
+    "created_at": "2026-03-26T08:38:03.560179Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 11,
+      "1": 12
+    },
+    "cases_done": [],
+    "resources_done": [],
+    "done_at": "2026-03-26T08:38:03.677898Z"
+  },
+  "bcd6f5aebe4e1784b7f590156a5b65342e60386b569b490b581eab0d728f9678": {
+    "status": "done",
+    "created_at": "2026-03-26T08:38:22.950592Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 13,
+      "1": 14
+    },
+    "cases_done": [],
+    "resources_done": [],
+    "done_at": "2026-03-26T08:38:22.997907Z"
+  },
+  "029374308592da2b03c6cb011276cd78f4b3e52634e2c36a8ae9d316ec82da5c": {
+    "status": "done",
+    "created_at": "2026-03-26T08:43:42.667248Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 15,
+      "1": 16
+    },
+    "cases_done": [],
+    "resources_done": [],
+    "done_at": "2026-03-26T08:43:42.722267Z"
+  },
+  "8c23bfa54f05ca6e689788d1b3655721e8b1af712b0ac1e90f4fd8490f23f4ce": {
+    "status": "done",
+    "created_at": "2026-03-26T08:45:53.680177Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 17,
+      "1": 18
+    },
+    "cases_done": [
+      "27d1c0fdc923b7eac27da805a38f0092a00a2286384fdd1f176c2cb4336a1fcf",
+      "3f7deb878dd93fc9516e298acbb058425bb48c0e3cf1c70154662293c7f0a43a",
+      "6a2efd670db213f72aeb52a3441d85669908c3d70cff5dd874ea85f4a305ec57",
+      "6b39e5d145a87781c38ae24bb5996d884414f475201e3059457e5a72b46d104f",
+      "9a19f08aa5893e7fb901cc0c9d5f96c2bc0e145d354006cf2b4ce745117519e5",
+      "c0873f2164d8f2d8e9b87785456ce4bf769503f33e4a51856de48cfd0d02bab0"
+    ],
+    "resources_done": [],
+    "done_at": "2026-03-26T08:45:53.797808Z"
+  },
+  "7775ebe695603499f5cb455e1c536758047cc18d4094b1027f245fd1b43469fc": {
+    "status": "done",
+    "created_at": "2026-03-26T09:06:44.739879Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 19,
+      "1": 20
+    },
+    "cases_done": [
+      "1c9db35aa1fcf69da174f32552e62a089422315145f4d3da395e2db99fe5efc9",
+      "2078355326a754ac54e62b0288d2f1392bf38b8466f014fcbb44fdfc715fe1f0",
+      "99089e6934f4cd6016992b55eab944e1cdc1002590da01be2048dd40d5021ef8",
+      "cbfe293cd41e4ce2089677d6f443b8a8ba82680fb8ff9bfd416cb973b29ea40b"
+    ],
+    "resources_done": [],
+    "done_at": "2026-03-26T09:06:44.866076Z"
+  },
+  "4c43a4f7a870be02a884bb939701c4218f7af6edfe56f67115ad79a57c09f176": {
+    "status": "done",
+    "created_at": "2026-03-26T09:07:04.725615Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 21,
+      "1": 22
+    },
+    "cases_done": [
+      "0f72a0f75caa1a6066a706ec6ba255fbe1e820f36fc1bad4820134cb18a29269",
+      "5db7ec68884e450cc6003433fb67f6278740f56cc5a3587534403acd7407c254",
+      "a283b436f0940d630e7e182e022ccda8041f30209f9c8064007e0d564c8f63b4",
+      "d5651518a55a4b9940d72edbeef6ecbbeaaa2148982abf247767f1b1845ad42f"
+    ],
+    "resources_done": [],
+    "done_at": "2026-03-26T09:07:04.816384Z"
+  },
+  "00ff9c4d6a985bfb471c5039d254376958f079e8ec3ce0019b81f464b81fa757": {
+    "status": "done",
+    "created_at": "2026-03-28T14:20:38.003992Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 23,
+      "1": 24
+    },
+    "cases_done": [
+      "2dd06e7d6e98119493aa747e4b244c431792cd36e54713c7cb76b6bf2a7efbed",
+      "401e0b7fb9894c0b7027dd88c89d15e9e346c2497a4e9954f103dccb756b4cc8",
+      "b840b7f2ce87faf20bb9f189d20bfc76bc047c8673cd0b855f868c6e6356afb8",
+      "c07059832a429abf5b5221576cd95e55a6b557a3d88235ef7ca0a1e94d6d8e90"
+    ],
+    "resources_done": [],
+    "done_at": "2026-03-28T14:20:38.742071Z"
+  },
+  "0ee7ac572fa3d826442a7ce51dfd41864ab7c844360dbf9af848015973ffbf12": {
+    "status": "done",
+    "created_at": "2026-03-28T14:21:20.237416Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 25,
+      "1": 26
+    },
+    "cases_done": [
+      "193182061b25ab80afaea42211504cd9d5610f7a812c86658c525a7beac6f4bc",
+      "3ca762cd3ec74756f03e0117b64ebe17c7d384d46749c9cbae133c05987affc7",
+      "5895a86de511e4843c9a6aa9cf07d5ec1231535a2b0c97f8def4cd0bf7bd3f41",
+      "8320dbbc929fc2d3d1fc18f13e959e0b143b673b8a2b06ad173eb6e287d7a4ff",
+      "a1708cc5e809bfb912376c85d72c1a40be8f1dc73df22ac582be8ae7bdb8a755",
+      "c60a4c3a0065b20e74167900d0a2b2a2d4c6b2471b9833683f24494f4909abcc",
+      "d975491dad3538bf00fdbf3666e1f7131fe1ca7849d1aad9e4ae62267f548b03",
+      "fa80905fe34fd0b3c2ad04398b806c367427352124f5c61de1c83b65ba9e0f33"
+    ],
+    "resources_done": [],
+    "done_at": "2026-03-28T14:21:20.826600Z"
+  },
+  "f1ad0682f04acbcef10c60b5bc65a7271364632b06c249e820463fa2747d6ab7": {
+    "status": "done",
+    "created_at": "2026-03-28T14:29:31.021864Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 27,
+      "1": 28
+    },
+    "cases_done": [],
+    "resources_done": [],
+    "done_at": "2026-03-28T14:29:31.317394Z"
+  },
+  "acf84bdc085f249a09b86a3d5017b2288fd37bd767fdc97074c86166bb3b53b4": {
+    "status": "done",
+    "created_at": "2026-03-28T14:29:41.235073Z",
+    "source": "data/elite_ideas/upload_elite_ideas_db.json",
+    "cards": {
+      "0": 29,
+      "1": 30
+    },
+    "cases_done": [],
+    "resources_done": [],
+    "done_at": "2026-03-28T14:29:41.553056Z"
+  }
+}

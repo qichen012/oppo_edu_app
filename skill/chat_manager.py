@@ -1,6 +1,9 @@
-"""
-对话管理模块
-管理用户与 AI 的对话，维护对话历史和上下文记忆
+"""对话管理模块
+管理用户与 AI 的对话，维护对话历史和上下文记忆。
+
+可选降级：
+- 设置环境变量 `CHAT_DISABLE_LLM=1`：不调用外部 LLM，直接返回规则化回复（方便离线/测试）。
+- 设置环境变量 `CHAT_FALLBACK_ON_LLM_ERROR=1`：LLM 调用失败时不抛异常，返回降级回复。
 """
 
 import os
@@ -8,14 +11,41 @@ import json
 from datetime import datetime
 from typing import List, Dict, Optional
 from openai import OpenAI
-from skill.config import DEEPSEEK_BASE_URL, DEEPSEEK_API_KEY, DEEPSEEK_MODEL
-
-
-# 初始化 DeepSeek 客户端
-client = OpenAI(
-    api_key=DEEPSEEK_API_KEY,
-    base_url=DEEPSEEK_BASE_URL
+from skill.config import (
+    ZHIZENGZENG_BASE_URL,
+    ZHIZENGZENG_API_KEY,
+    MODEL_NAME,
+    DEEPSEEK_BASE_URL,
+    DEEPSEEK_API_KEY,
+    DEEPSEEK_MODEL,
 )
+
+def _select_provider() -> str:
+    """选择聊天模型提供方。
+
+    优先级：
+    1) 环境变量 CHAT_PROVIDER=zhizengzeng|deepseek
+    2) 若配置了 ZHIZENGZENG_API_KEY，则默认用 zhizengzeng
+    3) 否则用 deepseek
+    """
+    forced = (os.getenv("CHAT_PROVIDER") or "").strip().lower()
+    if forced in {"zhizengzeng", "deepseek"}:
+        return forced
+    if (ZHIZENGZENG_API_KEY or "").strip():
+        return "zhizengzeng"
+    return "deepseek"
+
+
+def _create_client_and_model(provider: str) -> tuple[OpenAI, str]:
+    if provider == "zhizengzeng":
+        if not (ZHIZENGZENG_API_KEY or "").strip():
+            raise RuntimeError("Missing ZHIZENGZENG_API_KEY")
+        return OpenAI(api_key=ZHIZENGZENG_API_KEY, base_url=ZHIZENGZENG_BASE_URL), MODEL_NAME
+
+    # deepseek
+    if not (DEEPSEEK_API_KEY or "").strip():
+        raise RuntimeError("Missing DEEPSEEK_API_KEY")
+    return OpenAI(api_key=DEEPSEEK_API_KEY, base_url=DEEPSEEK_BASE_URL), DEEPSEEK_MODEL
 
 # 对话历史存储目录
 CHAT_HISTORY_DIR = os.path.join("data", "chat_histories")
@@ -72,6 +102,14 @@ class ChatManager:
         Returns:
             AI 的回复内容
         """
+        def _fallback_reply() -> str:
+            # 尽量短且稳定，避免污染后续摘要
+            return (
+                "（当前未启用大模型或大模型不可用）\n"
+                f"我已收到你的问题：{user_message}\n"
+                "你可以继续追问；待 LLM 恢复后我会给出更完整的回答。"
+            )
+
         # 添加用户消息到历史
         self.messages.append({
             "role": "user",
@@ -93,35 +131,46 @@ class ChatManager:
                 "content": msg["content"]
             })
         
+        assistant_message: Optional[str] = None
+        provider: Optional[str] = None
+        model: Optional[str] = None
         try:
-            # 调用 DeepSeek API
-            response = client.chat.completions.create(
-                model=DEEPSEEK_MODEL,
-                messages=api_messages,
-                temperature=0.7,
-                max_tokens=2000
-            )
-            
-            assistant_message = response.choices[0].message.content
-            
-            # 添加 AI 回复到历史
-            self.messages.append({
-                "role": "assistant",
-                "content": assistant_message,
-                "timestamp": datetime.now().isoformat()
-            })
-            
-            # 保存历史
-            self._save_history()
-            
-            return assistant_message
-            
+            if os.getenv("CHAT_DISABLE_LLM") == "1":
+                assistant_message = _fallback_reply()
+            else:
+                provider = _select_provider()
+                client, model = _create_client_and_model(provider)
+
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=api_messages,
+                    temperature=0.7,
+                    max_tokens=2000
+                )
+                assistant_message = response.choices[0].message.content
+
         except Exception as e:
-            error_msg = f"对话失败: {str(e)}"
+            provider_hint = f"provider={provider or 'unknown'}, model={model or 'unknown'}"
+            error_msg = f"对话失败({provider_hint}): {str(e)}"
             print(error_msg)
-            # 移除刚才添加的用户消息（因为对话失败了）
-            self.messages.pop()
-            raise Exception(error_msg)
+            if os.getenv("CHAT_FALLBACK_ON_LLM_ERROR") == "1":
+                assistant_message = _fallback_reply()
+            else:
+                # 移除刚才添加的用户消息（因为对话失败了）
+                self.messages.pop()
+                raise Exception(error_msg)
+
+        # 添加 AI 回复到历史
+        self.messages.append({
+            "role": "assistant",
+            "content": assistant_message or "",
+            "timestamp": datetime.now().isoformat()
+        })
+
+        # 保存历史
+        self._save_history()
+
+        return assistant_message or ""
     
     def get_history(self, limit: Optional[int] = None) -> List[Dict[str, str]]:
         """

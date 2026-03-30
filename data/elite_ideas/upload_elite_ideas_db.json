@@ -1,0 +1,24 @@
+{
+  "elite_idea_cards": [
+    {
+      "daily_brief_id": null,
+      "origin_concept": "卷积神经网络（CNN）的局部感知与权值共享机制",
+      "meta_idea_name": "局部优化与全局效能：从卷积核的局部感知看复杂系统的分布式协作",
+      "meta_explanation": "卷积核的设计思想是通过在图像的局部区域滑动提取特征（局部感知），并通过权值共享减少参数量，从而在有限计算资源下实现对全局图像的高效处理。这一机制启示我们，复杂系统的全局效能并不必然依赖于对整体的直接建",
+      "create_at": "2026-03-28 22:29:22",
+      "card_index": 0,
+      "image_path": "data/elite_ideas/images/upload_card1_288f63748a.png"
+    },
+    {
+      "daily_brief_id": null,
+      "origin_concept": "循环神经网络（RNN）及LSTM的遗忘门和细胞状态机制",
+      "meta_idea_name": "时间的记忆与遗忘：长短时记忆网络中的动态平衡法则",
+      "meta_explanation": "长短时记忆网络（LSTM）的核心在于通过细胞状态和门控机制（遗忘门、输入门、输出门），动态控制信息的保留与丢弃，从而有效解决序列建模中的长时依赖问题。这一设计思想反映了一种深刻的平衡法则：在面对复杂信",
+      "create_at": "2026-03-28 22:29:22",
+      "card_index": 1,
+      "image_path": "data/elite_ideas/images/upload_card2_a144d1efb2.png"
+    }
+  ],
+  "elite_idea_cases": [],
+  "external_resources": []
+}

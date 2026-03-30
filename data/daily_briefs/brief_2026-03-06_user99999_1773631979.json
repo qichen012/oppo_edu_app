@@ -1,0 +1,21 @@
+{
+  "user_id": 99999,
+  "target_date": "2026-03-06",
+  "posterior_insight": "本地测试简报：overdue=5d (should be selected)",
+  "key_concepts": "这是用于本地测试的简报内容：overdue=5d (should be selected)",
+  "prompt_questions": [
+    "Q1?",
+    "Q2?",
+    "Q3?"
+  ],
+  "prompt_question": "Q1?\nQ2?\nQ3?",
+  "review_stage": 0,
+  "next_review_date": "2026-03-11",
+  "source_handouts": "localtest_handout.json",
+  "origin": "LOCALTEST",
+  "created_at": "2026-03-16T00:00:00Z",
+  "updated_at": "2026-03-16T00:00:00Z",
+  "process_time": "0.00s",
+  "User_reflect": "",
+  "user_reflect": ""
+}

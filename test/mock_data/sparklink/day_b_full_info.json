@@ -1,0 +1,20 @@
+{
+  "source_file": "day_b.png",
+  "saved_at": "2026-03-12 21:00:00",
+  "screenshot_timestamp": 1773330000,
+  "screenshot_datetime": "2026-03-12 21:00:00",
+  "image_path": "data/data_screenshot/images/1773330000_day_b.png",
+  "status": "success",
+  "data": {
+    "summary": "机器学习课堂截图，包含PCA与降维实践",
+    "language": "zh",
+    "ocr_text": "PCA 主成分 降维 协方差矩阵",
+    "structured_content": {
+      "lists": ["PCA目标", "降维步骤"],
+      "tables": [],
+      "code_blocks": ["numpy.linalg.eig"],
+      "equations": ["C=\\frac{1}{n}X^TX"],
+      "chart_insights": []
+    }
+  }
+}

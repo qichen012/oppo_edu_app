@@ -34,6 +34,31 @@ Oppo Edu App 是一个基于 AI 的智能教育辅助系统，为学习者提供
 ├── test/                   # 测试脚本
 ├── rec/                    # 推荐引擎
 └── run/                    # 运行脚本
+
+## Chat 三层记忆（/chat 接口）
+
+`/chat` 在原有 `data/chat_histories/{user_id}_chat.json` 的基础上，新增三层文件型记忆，默认落盘到：
+
+- `data/chat_memory/segments/`：每次对话（一问一答）原始记录
+- `data/chat_memory/segment_summaries/`：每段对话的约 250 字摘要
+- `data/chat_memory/merged_summaries/`：每两个 250 摘要合并得到的约 300 字摘要（按(1,2)(3,4)…成对合并）
+
+在每次新对话前，服务会自动读取：
+
+- `segment_summaries` 最新 2 条
+- `merged_summaries` 最新 2 条
+
+并拼接为 system prompt 前置知识，供模型参考。
+
+### 最小自测
+
+1) 启动服务（默认端口 8001）：
+
+`CHAT_DISABLE_LLM=1 CHAT_MEMORY_DISABLE_LLM=1 python run/server.py`
+
+2) 另开终端执行自测：
+
+`python test/test_chat_memory_pipeline.py`
 ```
 
 ## 安装

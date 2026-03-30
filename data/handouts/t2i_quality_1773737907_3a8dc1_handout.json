@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Elite Ideas 文生图质量测试",
+    "subject": "学习方法",
+    "source_file": "t2i_quality_test.pdf"
+  },
+  "overview": "用于测试 Elite Ideas 的文生图质量（每个 handout 两张图）。",
+  "sections": [
+    {
+      "title": "学习策略",
+      "content": "本节只用于触发 Elite Ideas 离线兜底与文生图。",
+      "key_concepts": [
+        {
+          "term": "费曼学习法",
+          "definition": "用通俗语言讲清楚，发现并填补理解漏洞。",
+          "formula": "",
+          "example": "把概念讲给 12 岁小朋友听。"
+        },
+        {
+          "term": "刻意练习",
+          "definition": "在反馈闭环里做高强度、目标明确的练习。",
+          "formula": "",
+          "example": "针对薄弱点做分解训练并复盘。"
+        }
+      ]
+    }
+  ],
+  "summary": "测试完成后可删除产物。"
+}

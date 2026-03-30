@@ -99,3 +99,154 @@ def analyze_screenshot_bytes(image_bytes):
     except Exception as e:
         print(f"分析失败: {e}")
         raise
+
+
+def extract_all_info_from_screenshot_bytes(image_bytes):
+        """提取截图中的全部可识别信息（OCR、结构、要点、问题与行动项）"""
+        start_time = time.time()
+        base64_image = encode_image(image_bytes)
+
+        system_prompt = """
+        你是一个严谨的信息抽取引擎。用户会上传一张截图。
+
+        你的任务：尽可能完整地提取截图中的信息，并输出结构化 JSON。
+
+        输出要求：
+        1. 不要虚构看不到的内容；看不清请标注 uncertain。
+        2. OCR 文本尽量保留原文顺序与标点。
+        3. 对界面元素给出类型与位置信息（粗粒度即可：top/center/bottom + left/center/right）。
+        4. 如果有表格、列表、公式、代码、图表，请分别提取。
+
+        请严格返回以下 JSON 结构：
+        {
+            "summary": "一句话总结截图主要内容",
+            "language": "zh|en|mixed|unknown",
+            "ocr_text": "完整可读文本，按阅读顺序拼接",
+            "entities": {
+                "people": [],
+                "organizations": [],
+                "products": [],
+                "technologies": [],
+                "dates": [],
+                "numbers": [],
+                "urls": [],
+                "emails": []
+            },
+            "layout_elements": [
+                {
+                    "type": "title|paragraph|button|input|menu|table|chart|code|image|icon|other",
+                    "position": "top-left|top-center|top-right|center-left|center|center-right|bottom-left|bottom-center|bottom-right",
+                    "text": "该区域核心文本",
+                    "confidence": "high|medium|low"
+                }
+            ],
+            "structured_content": {
+                "lists": [],
+                "tables": [],
+                "code_blocks": [],
+                "equations": [],
+                "chart_insights": []
+            },
+            "tasks_or_actions": [],
+            "questions_or_issues": [],
+            "sensitive_info_detected": {
+                "has_sensitive": false,
+                "types": []
+            },
+            "uncertain": []
+        }
+        """
+
+        print("🧾 正在提取截图中的全量信息...")
+
+        try:
+                response = client.chat.completions.create(
+                        model=MODEL_NAME,
+                        messages=[
+                                {"role": "system", "content": system_prompt},
+                                {
+                                        "role": "user",
+                                        "content": [
+                                                {"type": "text", "text": "请提取这张截图中的所有可识别信息，并按约定 JSON 返回。"},
+                                                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}}
+                                        ]
+                                }
+                        ],
+                        response_format={"type": "json_object"},
+                        temperature=0.1
+                )
+
+                extract_result = response.choices[0].message.content
+                return {
+                        "status": "success",
+                        "process_time": f"{time.time() - start_time:.2f}s",
+                        "data": json.loads(extract_result)
+                }
+        except Exception as e:
+                print(f"全量提取失败: {e}")
+                raise
+
+
+def analyze_screenshot_brief_association(extracted_info: dict, daily_brief: dict):
+    """基于已保存的截图提取结果与每日简报做关联分析（不重复做视觉识别）"""
+    start_time = time.time()
+
+    system_prompt = """
+    你是一个学习关联分析引擎。
+
+    输入包含两部分：
+    1) 截图的结构化提取结果（已由视觉模型生成）
+    2) 每日简报（posterior_insight + key_concepts）
+
+    你的任务：识别截图与每日简报之间的高价值关联，输出 JSON。
+
+    请严格返回：
+    {
+      "overall_relevance": "high|medium|low",
+      "association_summary": "一句话总结关联结论",
+      "matched_points": [
+        {
+          "screenshot_evidence": "截图中的证据",
+          "brief_evidence": "简报中的对应证据",
+          "reason": "为什么构成关联"
+        }
+      ],
+      "unmatched_points": ["截图中但简报未覆盖的要点"],
+      "suggested_updates": ["建议补充到简报中的内容"],
+      "confidence": "high|medium|low"
+    }
+    """
+
+    user_payload = {
+        "screenshot_extracted_info": extracted_info,
+        "daily_brief": {
+            "target_date": daily_brief.get("target_date"),
+            "posterior_insight": daily_brief.get("posterior_insight", ""),
+            "key_concepts": daily_brief.get("key_concepts", ""),
+            "source_handouts": daily_brief.get("source_handouts", []),
+        },
+    }
+
+    try:
+        response = client.chat.completions.create(
+            model=MODEL_NAME,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {
+                    "role": "user",
+                    "content": f"请做截图与每日简报关联分析：\n{json.dumps(user_payload, ensure_ascii=False)}",
+                },
+            ],
+            response_format={"type": "json_object"},
+            temperature=0.2,
+        )
+
+        association_result = response.choices[0].message.content
+        return {
+            "status": "success",
+            "process_time": f"{time.time() - start_time:.2f}s",
+            "data": json.loads(association_result),
+        }
+    except Exception as e:
+        print(f"关联分析失败: {e}")
+        raise

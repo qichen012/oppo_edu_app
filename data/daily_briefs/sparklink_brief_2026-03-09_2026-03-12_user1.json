@@ -1,0 +1,16 @@
+{
+  "user_id": 1,
+  "target_date": "2026-03-12",
+  "posterior_insight": "Mock: 基于 2026-03-09 与 2026-03-12 的截图和简报完成了跨天知识融合。",
+  "key_concepts": "Mock: 这是用于联调的融合简报正文。系统已完成两天数据读取、证据拼接、结构化输出与落盘流程验证。后续只需将前端 JSON 入参映射到脚本中的 payload 即可无缝切换到真实模型生成。",
+  "created_at": "2026-03-13T02:18:54.313821+00:00",
+  "next_review_date": "2026-03-13",
+  "review_stage": 0,
+  "user_reflect": "",
+  "source_handouts": [
+    "数据科学理论基础：机器学习",
+    "离散信息度量体系与信息熵"
+  ],
+  "handout_count": 2,
+  "process_time": "0.00s"
+}

@@ -1,0 +1,24 @@
+{
+  "elite_idea_cards": [
+    {
+      "daily_brief_id": null,
+      "origin_concept": "费曼学习法",
+      "meta_idea_name": "教是更深刻的学：知识的输出即是理解的试金石",
+      "meta_explanation": "费曼学习法的核心在于“用通俗语言向外解释一个概念”，这一过程本质上是一种高效的知识检验工具。通过输出，我们迫使自己将模糊的理解转化为清晰的逻辑结构，从而暴露盲点并填补漏洞。这种学习模式不仅适用于知识吸",
+      "create_at": "2026-03-18 11:39:08",
+      "card_index": 0,
+      "image_path": "data/elite_ideas/images/api_flow_1773805129_e75a64_card1_7984e9579b.png"
+    },
+    {
+      "daily_brief_id": null,
+      "origin_concept": "刻意练习",
+      "meta_idea_name": "闭环成就精进：反馈是成长的加速器",
+      "meta_explanation": "刻意练习强调通过明确的目标和高强度训练，在反馈闭环中不断精进。这种模式中的关键在于“反馈”：只有通过及时的、有针对性的反思，才能发现自己的不足，调整下一步策略。这个理念可以推广到许多领域，比如创业中，",
+      "create_at": "2026-03-18 11:39:08",
+      "card_index": 1,
+      "image_path": "data/elite_ideas/images/api_flow_1773805129_e75a64_card2_e5f3072eb0.png"
+    }
+  ],
+  "elite_idea_cases": [],
+  "external_resources": []
+}

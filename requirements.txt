@@ -10,6 +10,9 @@ requests==2.32.3
 # AI/LLM
 openai==1.51.0
 
+# Pin httpx for openai compatibility (httpx 0.28 removed `proxies=`)
+httpx==0.27.2
+
 # Image processing (for T2I post-processing to exact 1080x480)
 Pillow==10.4.0
 

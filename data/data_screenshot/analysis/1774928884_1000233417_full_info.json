@@ -1,0 +1,94 @@
+{
+  "source_file": "1000233417.jpg",
+  "user_id": null,
+  "saved_at": "2026-03-31 11:48:29",
+  "screenshot_timestamp": 1774928884,
+  "screenshot_datetime": "2026-03-31 11:48:04",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774928884_1000233417.jpg",
+  "status": "success",
+  "process_time": "24.87s",
+  "data": {
+    "summary": "千问团队通过实验研究了注意力机制中的门控形式，提出了SDPA输出门控的最优实践。",
+    "language": "zh",
+    "ocr_text": "千问团队通过在 1.7B 密集模型与 15B 混合专家模型 (MoE) 上训练超过 3.5 万亿 token，并对比 30 余组控制实验，首次清晰回答了三个关键问题：如何在注意力中使用门控形式最有效？它为何有效？如何能在大模型中更好使用该机制？\n\nSDPA 输出门控\n最优实践\n\nFigure 1: Left: Investigated positions for applying gating operations within the self-attention layer.; Middle: Performance comparison (Test PPL and MMLU) of 15B MoE models with gating applied at various positions. Gating after SDPA (G1) yields the best overall results. Gating after the Value layer (G2) also demonstrates notable improvements, particularly in PPL. Right: Training loss comparison (smoothed, 0.9 coeff.) over 3T tokens between baseline and SDPA-gated 1.7B dense models under identical hyperparameters. Gating results in lower final loss and substantially enhanced training stability, mitigating loss spikes. This stability allows for potentially higher learning rates and facilitates better scaling.",
+    "entities": {
+      "people": [],
+      "organizations": [
+        "千问团队"
+      ],
+      "products": [],
+      "technologies": [
+        "1.7B 密集模型",
+        "15B 混合专家模型 (MoE)",
+        "SDPA 输出门控"
+      ],
+      "dates": [],
+      "numbers": [
+        "1.7B",
+        "15B",
+        "3.5 万亿",
+        "30"
+      ],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "paragraph",
+        "position": "top-center",
+        "text": "千问团队通过在 1.7B 密集模型与 15B 混合专家模型 (MoE) 上训练超过 3.5 万亿 token，并对比 30 余组控制实验，首次清晰回答了三个关键问题：如何在注意力中使用门控形式最有效？它为何有效？如何能在大模型中更好使用该机制？",
+        "confidence": "high"
+      },
+      {
+        "type": "title",
+        "position": "center",
+        "text": "SDPA 输出门控 最优实践",
+        "confidence": "high"
+      },
+      {
+        "type": "image",
+        "position": "bottom-center",
+        "text": "图表展示了SDPA输出门控的实验结果，包括性能对比和训练损失对比。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "bottom-center",
+        "text": "Figure 1: Left: Investigated positions for applying gating operations within the self-attention layer.; Middle: Performance comparison (Test PPL and MMLU) of 15B MoE models with gating applied at various positions. Gating after SDPA (G1) yields the best overall results. Gating after the Value layer (G2) also demonstrates notable improvements, particularly in PPL. Right: Training loss comparison (smoothed, 0.9 coeff.) over 3T tokens between baseline and SDPA-gated 1.7B dense models under identical hyperparameters. Gating results in lower final loss and substantially enhanced training stability, mitigating loss spikes. This stability allows for potentially higher learning rates and facilitates better scaling.",
+        "confidence": "high"
+      },
+      {
+        "type": "menu",
+        "position": "top-right",
+        "text": "界面顶部的功能菜单，包括返回、分享等功能。",
+        "confidence": "medium"
+      },
+      {
+        "type": "icon",
+        "position": "bottom-left",
+        "text": "千问团队的标志和社交互动按钮。",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": [
+        "SDPA输出门控在性能和训练稳定性上优于其他门控位置。"
+      ]
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [
+      "如何在注意力中使用门控形式最有效？",
+      "它为何有效？",
+      "如何能在大模型中更好使用该机制？"
+    ],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

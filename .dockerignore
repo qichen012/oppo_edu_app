@@ -1,0 +1,31 @@
+# VCS
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local data (mounted as volumes in compose)
+data/
+chroma_db/
+
+# Large / generated assets
+**/*.sqlite3
+**/*.log
+**/.DS_Store
+
+# Node / other
+node_modules/
+
+# Misc
+*.zip
+*.tar
+*.gz

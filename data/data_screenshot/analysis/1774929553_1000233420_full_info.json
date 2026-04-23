@@ -1,0 +1,62 @@
+{
+  "source_file": "1000233420.jpg",
+  "user_id": null,
+  "saved_at": "2026-03-31 11:59:29",
+  "screenshot_timestamp": 1774929553,
+  "screenshot_datetime": "2026-03-31 11:59:13",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774929553_1000233420.jpg",
+  "status": "success",
+  "process_time": "16.06s",
+  "data": {
+    "summary": "讨论门控机制在注意力机制中的作用及其研究现状。",
+    "language": "zh",
+    "ocr_text": "门控并非新概念\n但在注意力中被低估影响\n\n门控并非新概念。从 LSTM 中的遗忘门，到现代 FFN 中的 SwiGLU，再到 Mamba 等状态空间模型，门控始终扮演着调节信息流、增强非线性表达的角色。近年来，研究者也尝试将门控引入注意力机制——AlphaFold2 、 Forgetting Transformer 等工作都在 Softmax 注意力输出端加入了门控。然而，这些尝试大多将其作为整体架构的一部分，缺乏对门控本身作用的系统解耦。",
+    "entities": {
+      "people": [],
+      "organizations": [],
+      "products": [
+        "AlphaFold2",
+        "Forgetting Transformer"
+      ],
+      "technologies": [
+        "LSTM",
+        "FFN",
+        "SwiGLU",
+        "Mamba",
+        "Softmax"
+      ],
+      "dates": [],
+      "numbers": [],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "title",
+        "position": "top-center",
+        "text": "门控并非新概念\n但在注意力中被低估影响",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "门控并非新概念。从 LSTM 中的遗忘门，到现代 FFN 中的 SwiGLU，再到 Mamba 等状态空间模型，门控始终扮演着调节信息流、增强非线性表达的角色。近年来，研究者也尝试将门控引入注意力机制——AlphaFold2 、 Forgetting Transformer 等工作都在 Softmax 注意力输出端加入了门控。然而，这些尝试大多将其作为整体架构的一部分，缺乏对门控本身作用的系统解耦。",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": false,
+      "types": []
+    },
+    "uncertain": []
+  }
+}

@@ -1,0 +1,73 @@
+services:
+  oppo_edu_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # 默认不安装 KnowledgeTree/Chroma 依赖（更贴近原项目的默认启动方式，也能避免拉取巨大的 torch）。
+        # 如果你需要 KnowledgeTree 相关接口能力，把 0 改为 1（首次构建会比较久）。
+        INSTALL_KNOWLEDGE_TREE_DEPS: "0"
+    ports:
+      - "8001:8001"
+    environment:
+      # 主服务会调用 Learning_DB 的 REST API；在容器网络中不能用 localhost
+      LEARNING_DB_API_BASE_URL: "http://learning_api:8000/api/v1"
+
+      # ChromaDB 默认用相对路径 ./chroma_db；这里显式指到容器内持久化目录
+      KNOWLEDGE_TREE_CHROMA_PATH: "/app/chroma_db"
+
+      # 若你需要离线运行（不调用外部大模型），取消注释：
+      # CHAT_DISABLE_LLM: "1"
+      # CHAT_MEMORY_DISABLE_LLM: "1"
+
+      # 若你不想启动/依赖 Learning_DB（只跑本地文件落盘），取消注释：
+      # LEARNING_DB_DISABLE: "1"
+
+      # 代理环境下建议设置 NO_PROXY，避免对内部服务走代理
+      NO_PROXY: "localhost,127.0.0.1,learning_api,learning_db"
+
+    volumes:
+      # 运行时所有落盘数据（聊天历史、上传文件、简报等）
+      - ./data:/app/data
+      # ChromaDB 持久化向量库
+      - ./chroma_db:/app/chroma_db
+
+    depends_on:
+      - learning_api
+
+  learning_db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: Learning_DB
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./Learning_DB-master/Learning_DB.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - mysql_data:/var/lib/mysql
+    command: --default-authentication-plugin=mysql_native_password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-prootpassword"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  learning_api:
+    build:
+      context: ./Learning_DB-master
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: "mysql+pymysql://appuser:password@learning_db:3306/Learning_DB"
+      ENVIRONMENT: "docker"
+    depends_on:
+      learning_db:
+        condition: service_healthy
+
+volumes:
+  mysql_data:

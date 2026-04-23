@@ -4,7 +4,7 @@ import random
 import time
 import feedparser
 import requests
-from ddgs import DDGS
+from duckduckgo_search import DDGS
 
 
 # ===========================

@@ -1,0 +1,111 @@
+{
+  "source_file": "35.png",
+  "user_id": null,
+  "saved_at": "2026-03-30 20:22:34",
+  "screenshot_timestamp": 1774873291,
+  "screenshot_datetime": "2026-03-30 20:21:31",
+  "image_path": "/Users/xwj/Desktop/oppo_edu_app/data/data_screenshot/images/1774873291_35.png",
+  "status": "success",
+  "process_time": "62.73s",
+  "data": {
+    "summary": "截图描述了Meta公司因AI引发的安全事件及其影响。",
+    "language": "mixed",
+    "ocr_text": "亿用户的敏感数据，以及公司内部绝密文件，全都赤裸裸地暴露在成千上万名未经授权的员工面前。\n\n这不是黑客，不是代码漏洞，完全是由Meta的自研版OpenClaw酿起的一场灾难。\n\n一个AI，在Meta公司内部擅自行动，引发了一场严重的安全海啸，这个事情的可怕程度，足以让整个硅谷都抖三抖。\n\n听起来，这仿佛是科幻电影里的情节，但是，它真实地发生了！\n\nThe second employee then acted upon that advice, triggering a chain of events that ultimately led to a critical security incident.\n\nFor nearly two hours, Meta systems storing large amounts of company and user-related data were accessible to engineers who didn’t have permission to do so last week, according to the incident report. So far, there’s no sign that anyone took advantage of the temporary access or made the data public, according to a person familiar with the matter.\n\nStill, Meta ultimately classified the incident as a Sev 1, the second-highest level of severity on an\n\n新智元\n448 3473 167 76",
+    "entities": {
+      "people": [],
+      "organizations": [
+        "Meta",
+        "新智元"
+      ],
+      "products": [
+        "OpenClaw"
+      ],
+      "technologies": [
+        "AI"
+      ],
+      "dates": [],
+      "numbers": [
+        "1",
+        "448",
+        "3473",
+        "167",
+        "76"
+      ],
+      "urls": [],
+      "emails": []
+    },
+    "layout_elements": [
+      {
+        "type": "paragraph",
+        "position": "top-center",
+        "text": "亿用户的敏感数据，以及公司内部绝密文件，全都赤裸裸地暴露在成千上万名未经授权的员工面前。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "这不是黑客，不是代码漏洞，完全是由Meta的自研版OpenClaw酿起的一场灾难。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "一个AI，在Meta公司内部擅自行动，引发了一场严重的安全海啸，这个事情的可怕程度，足以让整个硅谷都抖三抖。",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "听起来，这仿佛是科幻电影里的情节，但是，它真实地发生了！",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "The second employee then acted upon that advice, triggering a chain of events that ultimately led to a critical security incident.",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "For nearly two hours, Meta systems storing large amounts of company and user-related data were accessible to engineers who didn’t have permission to do so last week, according to the incident report. So far, there’s no sign that anyone took advantage of the temporary access or made the data public, according to a person familiar with the matter.",
+        "confidence": "high"
+      },
+      {
+        "type": "paragraph",
+        "position": "center",
+        "text": "Still, Meta ultimately classified the incident as a Sev 1, the second-highest level of severity on an",
+        "confidence": "high"
+      },
+      {
+        "type": "menu",
+        "position": "bottom-left",
+        "text": "新智元",
+        "confidence": "high"
+      },
+      {
+        "type": "icon",
+        "position": "bottom-center",
+        "text": "448 3473 167 76",
+        "confidence": "high"
+      }
+    ],
+    "structured_content": {
+      "lists": [],
+      "tables": [],
+      "code_blocks": [],
+      "equations": [],
+      "chart_insights": []
+    },
+    "tasks_or_actions": [],
+    "questions_or_issues": [],
+    "sensitive_info_detected": {
+      "has_sensitive": true,
+      "types": [
+        "company data exposure",
+        "security incident"
+      ]
+    },
+    "uncertain": []
+  }
+}
